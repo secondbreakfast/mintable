@@ -287,7 +287,8 @@ export class GoogleIntegration {
         return columns.map(key => {
             if (row && row.hasOwnProperty(key)) {
                 if (key === 'date') {
-                    return format(row[key], this.googleConfig.dateFormat || 'MM/dd/yyyy')
+                    // return format(row[key], this.googleConfig.dateFormat || 'MM/dd/yyyy')
+                    return format(row[key], 'MM/dd/yyyy')
                 }
                 return row[key]
             }
