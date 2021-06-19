@@ -232,7 +232,7 @@ export class PlaidIntegration {
                     accountId: transaction.account_id,
                     transactionId: transaction.transaction_id,
                     blank: "",
-                    category: transaction.category[0],
+                    category: transaction.category[0].toLowerCase(),
                     categoryLong: transaction.category.join(' - '),
                     address: transaction.location.address,
                     city: transaction.location.city,
