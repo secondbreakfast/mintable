@@ -373,3 +373,4 @@ export class GoogleIntegration {
         console.log(`https://docs.google.com/spreadsheets/d/${this.googleConfig.documentId}`)
     }
 }
+
